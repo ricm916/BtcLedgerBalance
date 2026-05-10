@@ -23,11 +23,16 @@ pip install -r requirements.txt
 
 ## Configuration
 
-Edit `config.py` to set your wallet's xpub and scan parameters:
+1. Copy the example configuration file:
+   ```bash
+   cp config.py.example config.py
+   ```
+
+2. Edit `config.py` and replace the placeholder xpub with your actual xpub:
 
 ```python
 # Extended public key (BIP84) for deriving receive and change addresses
-xpub = "xpub..."
+xpub = "YOUR_XPUB_HERE"
 
 # Number of consecutive empty addresses (no transaction history) to scan before stopping
 SCAN_GAP_THRESHOLD = 5
@@ -160,10 +165,10 @@ The script includes a 1.2 second delay between API calls to avoid rate limiting 
 
 ```
 LEDGER/
-├── main.py        # Main tracking script
+├── main.py       # Main tracking script
 ├── config.py     # Configuration (xpub and settings)
 ├── ledger.json   # Output data (auto-generated)
-└── README.md    # This file
+└── README.md     # This file
 ```
 
 ## Notes
