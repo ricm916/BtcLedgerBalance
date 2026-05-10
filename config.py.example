@@ -1,4 +1,4 @@
-# Ledger BTC Wallet Tracker Configuration
+# BTC Ledger Wallet Tracker Configuration
 
 # Extended public key (BIP84) for deriving receive and change addresses
 xpub = "< YOUR xpub HERE>"
