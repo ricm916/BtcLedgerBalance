@@ -1,0 +1,14 @@
+# Ledger BTC Wallet Tracker Configuration
+
+# Extended public key (BIP84) for deriving receive and change addresses
+xpub = "< YOUR xpub HERE>"
+
+# Number of consecutive empty addresses (no transaction history) to scan before stopping.
+# Once this many addresses in a row have no data, scanning stops for that chain.
+# Recommended: 5-20 (lower = faster but might miss addresses, higher = more thorough but slower)
+SCAN_GAP_THRESHOLD = 2
+
+# Number of addresses to check when user extends scan with 'n' at the verification prompt.
+# Only applies to subsequent runs after first scan completes.
+# Recommended: 20-50
+SCAN_BATCH_SIZE = 20
